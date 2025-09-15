@@ -1,0 +1,160 @@
+/* General reset and body styling */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #e0caca;
+}
+
+/* Logo section */
+.logo-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  /* background-color: #ffffff; */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* .logo-in img {
+  /* width: 40px;
+  height: 40px; */
+/* } */ 
+
+.title {
+  font-size: 24px;
+  color: #000000;
+}
+
+/* Input section */
+.submit-in {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.submit-in input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+.submit-in input:focus {
+  border-color: #000000;
+}
+
+.submit-in .button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-in .button:hover {
+  background-color: #005fa3;
+}
+
+/* Headline section */
+.cutout-text {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #222;
+}
+
+/* News card styling */
+.wrap {
+  background-color: #fff;
+  margin: 15px auto;
+  max-width: 600px;
+  border-radius:  10px;
+  border: 1px solid black;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.title-2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.desc {
+  padding: 0 10px 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pub {
+  padding: 0 10px 10px;
+  font-size: 12px;
+  color: #888;
+}
+.form-check-input {
+  border-color: black !important;
+}
+
+.form-check-input:checked {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+  border-color: black !important;
+}
+.dark-mode{
+  background-color: #9ca3a2;
+  color: #000000;
+}
+.white-mode{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.but11 {
+  width: 40px;         /* adjust size as needed */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent; 
+  cursor: pointer;
+  padding: 0;
+}
+.img2{
+  height: 2rem;
+
+}
+.form-check-label{
+  font-family: cursive;
+}
