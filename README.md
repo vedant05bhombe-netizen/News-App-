@@ -1,41 +1,88 @@
-# React + Vite
+# React News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React** application built with **Vite** that fetches and displays news articles from an API.  
+This project demonstrates fetching data, managing state, and rendering news dynamically with modern React practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Fetch news articles from an API  
+- Display article title, description, image, author, and publication date  
+- Responsive design for desktop and mobile  
+- Loading state handling  
+- Error handling for failed API requests  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- **Frontend:** React  
+- **Build Tool:** Vite  
+- **State Management:** React Hooks (`useState`, `useEffect`)  
+- **Linting:** ESLint  
+
+---
+
+## Installation & Setup
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/vedant05bhombe-netizen/NEWS-APP.git
+cd NEWS-APP
+Install dependencies:
+```
 
 
-{
-  "status": "ok",
-  "totalResults": 5,
-  "articles": [      // <-- This is an array!
-    {
-      "source": { "id": "source-id", "name": "source name" },
-      "author": "Author Name",
-      "title": "Article Title",
-      "description": "Short description",
-      "url": "https://example.com",
-      "urlToImage": "https://example.com/image.jpg",
-      "publishedAt": "2025-09-12T06:30:00Z",
-      "content": "Full or partial content here..."
-    },
+- Copy code
+- npm install
+- Start the development server:
 
+```bash
+Copy code
+npm run dev
+Open your browser at the URL shown (usually http://localhost:5173) to view the app.
+```
+## Usage
+- The app fetches news from the configured API URL.
 
-     try {
-      const response = await fetch(URL);
-      const data = await response.json();
-      SetNews(data.articles || []);
-    } catch (err) {
-      console.error("Fetch error:", err);
-      SetNews([]);
-    } finally {
-      setLoading(false); // stop loading
-    }
-  }
+- Articles are displayed with their title, description, author, image, and published date.
+
+- Loading state is shown while fetching data.
+
+- Errors are logged in the console and handled gracefully.
+
+## Project Structure
+
+- src
+-  ├─ components    # React components (e.g., NewsCard, Navbar)
+-  ├─ pages         # App pages (if any)
+-  ├─ App.jsx       # Main app component
+-  ├─ main.jsx      # Entry point
+-  └─ styles        # CSS or SCSS files
+
+ 
+## Contributing
+- Contributions are welcome!
+
+- Fork the repository
+
+- Create your feature branch:
+
+```bash
+Copy code
+git checkout -b feature/AmazingFeature
+Commit your changes:
+
+bash
+Copy code
+git commit -m 'Add some feature'
+Push to the branch:
+
+bash
+Copy code
+git push origin feature/AmazingFeature
+Open a Pull Request
+```
+Author
+Vedant Bhombe – GitHub Profile
